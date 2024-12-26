@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Questions</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="logo">
+                    <a href="../about/index.html"><img src="img/logo-top4.png" alt="Логотип сайта"></a>
+                </div>
+                <div class="col-9 sofia-sans-5 zagolovok">
+                    Test Landia
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col" >
+                <h1  class="sofia-sans-6" style="color:rgb(255, 255, 255);" id="display-name"></h1>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-3">
+                <div class="btn-group-vertical" role="group" aria-label="Button group">
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 1')">
+                        <img  class="my-svg my-svg2" src="img/info.svg"  alt="Информатика">
+                        
+                        Тест 1
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 2')">                        
+                        <img  class="my-svg my-svg2" src="img/info.svg"  alt="Информатика">
+                        Тест 2
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 3')">
+                        <img  class="my-svg my-svg3" src="img/geography.svg"  alt="География">
+                        Тест 3
+                    </button>                    
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 4')">
+                        <!--
+                        <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d=""/>
+                        </svg>
+                    -->
+                    <img  class="my-svg my-svg3" src="img/geography.svg"  alt="География">               
+                        Тест 4
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 5')">
+                        <img  class="my-svg my-svg4" src="img/history.svg"  alt="История">
+                        Тест 5
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 6')">
+                        <img  class="my-svg my-svg4" src="img/history.svg"  alt="История">
+                        Тест 6
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 7')">
+                        <img  class="my-svg my-svg5" src="img/bio.svg"  alt="Биология">
+                        Тест 7
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 8')">
+                        <img  class="my-svg my-svg5" src="img/bio.svg"  alt="Биология">
+                        Тест 8
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 9')">
+                        <img  class="my-svg my-svg6" src="img/chemistry.svg"  alt="Химия">
+                        Тест 9
+                    </button>
+                    <button class="btn btn-primary mt-4" onclick="changeTest('test 10')">
+                        <img  class="my-svg my-svg6" src="img/chemistry.svg"  alt="Химия">
+                        Тест 10
+                    </button>
+                    <button class="btn btn-primary mt-4" id="toggleButton" onclick="toggleAnimation()">Start
+                        Animation</button>
+                        <button class="btn btn-primary mt-4" id="toggleAudio" onclick="toggleAudio()">Audio ON</button>
+                        <button class="btn btn-info mt-4" id="buttonSave" onclick="save()">Save
+                            </button> 
+                            <button class="btn btn-info mt-4" id="buttonSaveDB" onclick="saveDB()">Save DB
+                            </button>
+                            <button class="btn btn-info mt-4" id="buttonLoadDB" onclick="loadDB()">Load DB
+                            </button>                              
+                            <button class="btn btn-info mt-4" id="buttonLoad" onclick="load()">Load
+                            </button>
+                            <button class="btn btn-info mt-4" id="buttonLoad"><a href="php/form.html" style="color:white;"> Comments</a>
+                            </button>           
+                </div>
+            </div>
+
+            <div class="col-9  ">
+                <div id="questions-container"></div>
+                <!--<div class="d-flex justify-content-center align-items-center">-->
+                    <div style="position:fixed;bottom:50px;right: 30px;">
+                    <button type="button" class="btn btn-primary" onclick="check(this)">Проверить</button>
+                </div>
+            </div>
+        </div>
+        <footer class="d-flex justify-content-end align-items-center">
+            <div>Сайт разработал Курин Тимофей Александрович, 2024 год</div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js" defer></script>
+    <script src="data.js" defer></script>
+</body>
+
+</html>
